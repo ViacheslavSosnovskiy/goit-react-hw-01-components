@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import users from "./user.json";
+import Profile from "./components/profile";
 
-function App() {
+export default function App() {
+  // const isOnline = false;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    // {isOnline && 'ОНЛАЙН'}
+    // {isOnline ? 'ОНЛАЙН' : 'ОФЛАЙН'}
+    <div>
+      {users.map((user) => (
+        <Profile
+          key={user.tag}
+          avatar={user.avatar}
+          name={user.name}
+          tag={user.tag}
+          location={user.location}
+          stats={user.stats}
+        />
+      ))}
     </div>
   );
 }
-
-export default App;
