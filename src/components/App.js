@@ -1,20 +1,22 @@
-import users from "./users.json";
-import Profile from "./components/profile";
+import user from "../data/user.json";
+import Profile from "./Profile/Profile";
 
-export default function App() {
+const App = () => {
   return (
     <div>
       <Profile
-        // key={user.tag}
-        avatar={users.avatar}
-        name={users.name}
-        tag={users.tag}
-        location={users.location}
-        stats={users.stats}
+        {...user}
+        // avatar={user.avatar}
+        // name={user.name}
+        // tag={user.tag}
+        // location={user.location}
+        // stats={user.stats}
       />
     </div>
   );
-}
+};
+
+export default App;
 
 // -----------------------------
 // export default function App() {
@@ -28,7 +30,7 @@ export default function App() {
 //           // key={user.tag}
 //           avatar={user.avatar}
 //           name={user.name}
-//           // tag={user.tag}
+//           tag={user.tag}
 //           location={user.location}
 //           stats={user.stats}
 //         />
