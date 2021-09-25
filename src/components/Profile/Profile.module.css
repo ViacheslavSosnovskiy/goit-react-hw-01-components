@@ -4,8 +4,8 @@ ul {
 
 .profile {
   background-color: gray;
-  width: 300px;
-  height: 400px;
+  width: 250px;
+  height: 350px;
   border-radius: 15px;
   margin: 50px;
   padding: 20px;
@@ -37,7 +37,6 @@ ul {
 
 .label {
   display: block;
-  font-size: 14px;
 }
 
 .quantity {
