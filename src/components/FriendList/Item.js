@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import s from "./friendList.module.css";
 
-const Item = (avatar, name, isOnline) => {
+const Item = ({ avatar, name, isOnline }) => {
   return (
     <li className={s.item}>
       <span className={isOnline ? s.online : s.offline}></span>
