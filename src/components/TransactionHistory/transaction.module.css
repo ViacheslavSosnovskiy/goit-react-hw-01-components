@@ -1,0 +1,19 @@
+.transactionHistory {
+  border: 2px solid black;
+  text-align: center;
+}
+
+th {
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  background-color: green;
+}
+
+td {
+  height: 30px;
+}
+
+tr:nth-child(odd) {
+  background-color: grey;
+}
